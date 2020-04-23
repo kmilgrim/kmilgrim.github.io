@@ -14,6 +14,8 @@
 <tw-storydata name="Gender Twine 4.5.20" startnode="21" creator="Twine" creator-version="2.3.5" ifid="ABD8D3B4-8DEF-4F74-B18F-31AD62D17877" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 
 	tw-link {
 		color:#e600ff;
@@ -21,11 +23,30 @@
 	tw-link:hover {
 		color:#f9bdff;
 }
+	tw-link[tags~="Sam"] {
+	  color: #885A89;
+}
+	tw-story[tags~="YouandSam"] {
+	  font-size: 30px;
+	  font-family: 'Delius', sans-serif;
+		background-color: #D1B490;
+}
 	tw-story {
 	  font-size: 30px;
 	  font-family: 'Gotu', sans-serif;
 }
-
+	.phonefont {
+	  font-size: 80px;
+	  font-family: 'Abel'
+}
+	.phonefont1 {
+	  font-size: 50px;
+	  font-family: 'Abel'
+}
+	.phonefont2 {
+	  font-size: 30px;
+	  font-family: 'Abel'
+}
 	.appfont {
 	  font-size: 30px;
 	  font-family: 'Kanit', sans-serif;
@@ -107,6 +128,7 @@
 	  background-color: #02312f;
 	  color: #FFFFFF;
 }
+
 	.appButton {
 	-moz-box-shadow:inset 0px 0px 0px 0px #000000;
 	-webkit-box-shadow:inset 0px 0px 0px 0px #FFFFFF;
@@ -154,11 +176,6 @@
 	position:relative;
 	top:1px;
 }
- 
-	  
-
-
-
 </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="startup" color="purple"></tw-tag><tw-passagedata pid="1" name=" download" tags="" position="347,100" size="100,100">GenBETA app downloading... 
 (set: $transCounter to 0)\
 
@@ -280,52 +297,60 @@ You&#39;ve been waiting 364 days for this. You smile, thank her, and rip the wra
 I knew you&#39;d love to have a [[new outfit]] for the first day of school. </tw-passagedata><tw-passagedata pid="12" name="new outfit" tags="blueback" position="680,231" size="100,100">It&#39;s the most (if: $gender is 0)[//girly//](if: $gender is 10)[//boyish//] thing you&#39;ve ever seen. (if: $gender is 0)[the pink, the ruffles, the glitter; it looks like all the barbies in the world collaborated on this.](if: $gender is 10)[the polo, the cargo shorts, the dark green and blue stripes; at least Captain America would approve.]
 
 [[You Smile]]
-[[You&#39;re horrified]]</tw-passagedata><tw-passagedata pid="13" name="You Smile" tags="whiteback blacktxt" position="472,324" size="100,100">You feel the fabric in your hands. This is you, but represented in clothing. It fits in perfectly to your wardrobe already, and you&#39;re happy you don&#39;t have to worry about an outfit for the first day of school anymore. 
+[[You&#39;re horrified]]</tw-passagedata><tw-passagedata pid="13" name="You Smile" tags="whiteback blacktxt" position="485.3333333333333,335.6666666666667" size="100,100">You feel the fabric in your hands. This is you, but represented in clothing. It fits in perfectly with your wardrobe already, and you&#39;re happy you don&#39;t have to worry about an outfit for the first day of school anymore. 
 
-You see mom beam with happiness. 
+You see mom beaming with joy. 
 You rush to your room to [[try it on.]]</tw-passagedata><tw-passagedata pid="14" name="You&#39;re horrified" tags="blueback1" position="662,349" size="100,100">(if: $gender is 0)[(set: $gender to $gender +4)](if: $gender is 10)[(set: $gender to $gender 6)]
-You feel immensely guilty. You could never bring yourself to wear this. It isn&#39;t you; you&#39;ve never worn anything like it. You wonder how mom ever could have thought of you buying this outfit. Maybe it isn&#39;t mom trying to please you, but mom trying to please herself. 
+You feel immensely guilty. You could never bring yourself to wear this. It isn&#39;t you; you&#39;ve never worn anything like it. 
 
-You turn to look at mom. You see her eager smile, her curious eyes.
-&quot;Well, do you like it?&quot; she asks. 
-You stay silent.
+How could mom have thought of you while buying this outfit? Maybe she was thinking of what //she// wanted you to wear.
 
-She tells you she knows this doesn&#39;t fit in with your style. She says it&#39;s a good change, that you should at least //try// to look put together. Even if it&#39;s only for the first day.
-
-You agree to [[try it on]]</tw-passagedata><tw-passagedata pid="15" name="try it on" tags="blueback2" position="664,475" size="100,100">You&#39;re in your room, looking at this horrible clothing you never would have picked out for yourself.
+You turn to look at her. 
+You see that eager smile, those curious eyes.
+&quot;Well, do you like it?&quot; she asks. You just stay [[silent.]]
+</tw-passagedata><tw-passagedata pid="15" name="try it on" tags="blueback3" position="814,553.3333333333334" size="100,100">You&#39;re in your room, looking at this horrible clothing you never would have picked out for yourself.
 
 [[It just isn&#39;t me]]
-</tw-passagedata><tw-passagedata pid="16" name="try it on." tags="whiteback blacktxt" position="477,477" size="100,100">It fits your persona perfectly! 
+</tw-passagedata><tw-passagedata pid="16" name="try it on." tags="whiteback blacktxt" position="477,477" size="100,100">It fits you perfectly! 
 
-You run out of the living room, eager to show mom how great the outfit looks. You feel so empowered, and you have no doubt that you&#39;ll look great on the first day of school. 
+You run out of the living room, eager to show mom how great the outfit looks. 
 
-[[Your mom looks quite pleased]]</tw-passagedata><tw-passagedata pid="17" name="It just isn&#39;t me" tags="blueback3" position="664,594" size="100,100">Your friends would be so confused if they saw you in this. They know you as the kid with (cycling-link: &quot;preppy&quot;, &quot;casual&quot;, &quot;sporty&quot;, &quot;boring&quot;) style. This outfit clashes with that completely. 
+You feel so empowered, and you have no doubt that you&#39;ll look great on the first day of school. 
+
+[[Your mom looks quite pleased]]</tw-passagedata><tw-passagedata pid="17" name="It just isn&#39;t me" tags="blueback4" position="664,594" size="100,100">Your friends would be so confused if they saw you in this. They know you as the kid with (cycling-link: &quot;preppy&quot;, &quot;casual&quot;, &quot;sporty&quot;, &quot;boring&quot;) style. This outfit clashes with that completely. 
 
 Also, you worry that maybe your friends would make fun of you. Sometimes it seems like you (cycling-link: &quot;don&#39;t fit in&quot;, &quot;are part of a larger group&quot;), and this outfit would definitely draw the wrong attention.
 
-Either way, you don&#39;t want anyone to [[question you.]]</tw-passagedata><tw-passagedata pid="18" name="question you." tags="blueback4" position="669,712" size="100,100">You&#39;re left a bit confused. 
+Either way, you don&#39;t want anyone to [[question you.]]</tw-passagedata><tw-passagedata pid="18" name="question you." tags="" position="664,748.6666666666666" size="100,100">You&#39;re left a bit confused. 
 
 Who does your mom think you are? Who does she want you to be? 
 
-You wish you could go back to your bland clothes. If noone cared, maybe you&#39;d even want to wear (if: $gender is 0 or 4)[something more masculine](if: $gender is 10 or 6)[something more feminine]. You know that isn&#39;t true though. The true version of you should probably stay hidden for a little while longer. 
+You wish you could go back to your bland clothes. If no-one cared, maybe you&#39;d even want to wear (if: $gender is 0 or 4)[something more masculine](if: $gender is 10 or 6)[something more feminine]. You know that isn&#39;t true though. The true version of you should probably stay hidden for a little while longer. 
 
-[[Five Years Later...]]</tw-passagedata><tw-passagedata pid="19" name="Your mom looks quite pleased" tags="whiteback blacktxt" position="479,608" size="100,100">She tells you over and over how (if: $gender is 0)[beautiful](if: $gender is 10)[handsome] you are. These are the best moments - when you know how happy your mom is to have a (if: $gender is 0)[daughter](if: $gender is 10)[son] like you. 
+[[Five Years Later...]]</tw-passagedata><tw-passagedata pid="19" name="Your mom looks quite pleased" tags="whiteback blacktxt" position="479,608" size="100,100">She tells you over and over how (if: $gender is 0)[beautiful](if: $gender is 10)[handsome] you are. These are the best moments - when you get to hear how proud your mom is to have a (if: $gender is 0)[daughter](if: $gender is 10)[son] like you. 
 
 You couldn&#39;t be happier. 
 
-[[Five Years Later...]]</tw-passagedata><tw-passagedata pid="20" name="Five Years Later..." tags="" position="501,902" size="100,100">You wake up to your phone buzzing beside you. 
+[[Five Years Later...]]</tw-passagedata><tw-passagedata pid="20" name="Five Years Later..." tags="blackpurple YouandSam" position="501,902" size="100,100">You wake up to your phone buzzing beside you. 
 
-(Insert border and button for phone interface)
+&lt;p style=&quot;border:10px; border-style:solid; border-color:#FFFFFF; padding: 1em;&quot;&gt;
 
-Calling: Sam
+&lt;span class = &quot;phonefont&quot;&gt;(align: &quot;=&gt;&lt;=&quot;)[(current-time:)]&lt;/span&gt;
+&lt;span class = &quot;phonefont1&quot;&gt;(align: &quot;=&gt;&lt;=&quot;)[Incoming Call 
 
-[[Answer]]</tw-passagedata><tw-passagedata pid="21" name="Disclaimer" tags="" position="61,205" size="100,100">Welcome to the GenBETA game. 
+From Sam]&lt;/span&gt;
 
-This game was created mainly to draw attention to how choices in how the player&#39;s ability to interact with a game influences the amount of control they have over a character&#39;s personality. 
+&lt;span class = &quot;phonefont2&quot;&gt;(align: &quot;=&gt;&lt;=&quot;)[&lt;span class = &quot;appButton2&quot;&gt;
+[[		Answer		]]
 
-Since I did not have the time to make this game as expansive as it should be to showcase this phenomenon, it is important for me to note that the situations mentioned in this game do not encompass all of the possible scenarious people could go through while developing their identity. 
+&lt;/span&gt;]&lt;/span&gt;
 
-Please enjoy a small snippet of the creation of an identity.
+&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="21" name="Disclaimer" tags="" position="61,205" size="100,100">Welcome to the GenBETA game. 
+
+This game was created to draw attention to how choices in how the player&#39;s ability to interact with a game influences a character&#39;s identity (especially regarding gender). 
+
+Please keep in mind: this game portrays only one portion of the complicated development process. It does not encompass all of the possible scenarios people could go through while developing their identity. 
 
 &lt;span class = &quot;appButton2&quot;&gt;[[Begin -&gt; Baby]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="22" name=" Baby" tags="" position="198,98" size="100,100">Re: Application
 
@@ -335,15 +360,12 @@ We would like to inform you that your application has been approved. You will be
 
 We send our best regards.
 
-- GenBETA team</tw-passagedata><tw-passagedata pid="23" name="Answer" tags="" position="501,1052" size="100,100">&quot;Happy Birthday!!!&quot; Sam screams into the phone. You immediately feel a pang of irritation from the loud sound, but a feeling of thankfulness overcomes you. Of course Sam, your best friend, would be the first to call. Sam is the only person outside your immediate family that seems to care anyways.
-
-[[Hello]]</tw-passagedata><tw-passagedata pid="24" name="Hello" tags="" position="501,1202" size="100,100">&quot;I want to take you out somewhere today. My gift to you. What would you like to do?&quot;
+- GenBETA team</tw-passagedata><tw-passagedata pid="23" name="Hello" tags="YouandSam" position="501,1202" size="100,100">&quot;I want to take you out somewhere today. My gift to you. What would you like to do?&quot;
 
 You respond: You know, I&#39;ve been meaning to (cycling-link: bind $activity, &quot;finish //GTA 5//&quot;, &quot;get my nails done&quot;, &quot;go on a hike&quot;) recently. 
 
 &quot;Great.&quot; Sam Replies. &quot;Be ready in [[half an hour.]]&quot;
-
-</tw-passagedata><tw-passagedata pid="25" name="half an hour." tags="" position="276,1352" size="100,100">(if: $activity is &quot;finish //GTA 5//&quot;)[(set: $activity to 1)] \
+</tw-passagedata><tw-passagedata pid="24" name="half an hour." tags="YouandSam" position="276,1352" size="100,100">(if: $activity is &quot;finish //GTA 5//&quot;)[(set: $activity to 1)] \
 (if: $activity is &quot;get my nails done&quot;)[(set: $activity to 2)] \
 (if: $activity is &quot;go on a hike&quot;)[(set: $activity to 3)] \
 When Sam arrives, you can&#39;t help but smile. You (if: $gender is 0 or 4)[hug](if: $gender is 10 or 6)[fist bump], and head to (if: $activity is 1)[the basement](if: $activity is 2 or 3)[Sam&#39;s jeep]. 
@@ -355,28 +377,19 @@ You know it&#39;ll be a great day. Sam is the person you can be yourself around,
 [[It&#39;s been shakey ground lately, you can&#39;t help but wonder if you&#39;ve actually been allowed to be yourself ; you know, with your mom and all...]]
 
 (if: $gender is 4 or 6)[[You really don&#39;t think you fit in this body]]
-</tw-passagedata><tw-passagedata pid="26" name="You know who you are, but maybe solidifying your ideas and getting some validation could help" tags="" position="126,1502" size="100,100">You do it. You let it all out.
+</tw-passagedata><tw-passagedata pid="25" name="You know who you are, but maybe solidifying your ideas and getting some validation could help" tags="" position="126,1502" size="100,100">You do it. You let it all out.
 
-Sam (if: $activity is 1)[sits with you on the couch](if: $activity is 2)[sits next to you in a matching salon chair](if: $activity is 3)[walks by your side through the open daisy meadow], listening to your release: you tell Sam you&#39;re happy. Your job is stable, your family is healthy, and only good things lie ahead. You&#39;re so excited for this next year: not only to progress in work and learn more each day, but to continue developing your own identity. You&#39;re confident in who you are and who you want to be. You&#39;re comfortable with every corner of your being. 
+Sam (if: $activity is 1)[sits with you on the couch](if: $activity is 2)[sits next to you in a matching salon chair](if: $activity is 3)[walks by your side through the open daisy meadow], listening to your release: you tell Sam you&#39;re [[happy.]] </tw-passagedata><tw-passagedata pid="26" name="It&#39;s been shakey ground lately, you can&#39;t help but wonder if you&#39;ve actually been allowed to be yourself ; you know, with your mom and all..." tags="YouandSam" position="344.33333333333337,1557" size="100,100">You do it. You let it all out.
 
-You feel lucky to have Sam.
-[[You feel even more lucky to be yourself]]</tw-passagedata><tw-passagedata pid="27" name="It&#39;s been shakey ground lately, you can&#39;t help but wonder if you&#39;ve actually been allowed to be yourself ; you know, with your mom and all..." tags="" position="276,1502" size="100,100">You do it. You let it all out.
+Sam (if: $activity is 1)[sits with you on the couch](if: $activity is 2)[sits next to you in a matching salon chair](if: $activity is 3)[walks by your side through the open daisy meadow], listening to your release: you tell Sam you&#39;re happy. Your job is stable, your family is healthy, and only good things lie ahead. But really, [[you&#39;re confused.]] </tw-passagedata><tw-passagedata pid="27" name="You really don&#39;t think you fit in this body" tags="YouandSam" position="500.33333333333337,1429" size="100,100">You do it. You let it all out.
 
-Sam (if: $activity is 1)[sits with you on the couch](if: $activity is 2)[sits next to you in a matching salon chair](if: $activity is 3)[walks by your side through the open daisy meadow], listening to your release: you tell Sam you&#39;re happy. Your job is stable, your family is healthy, and only good things lie ahead. But really, you&#39;re confused. You express worry in the fact that you may not actually want to continue progressing up the ranks in your law firm: that maybe all those years of school and hard work were for nothing. You don&#39;t want to believe you&#39;re a waste, but that&#39;s all you can feel. 
-
-&quot;But you have so much knowledge and experience now,&quot; Sam says. 
-Sam [[pats your back]]</tw-passagedata><tw-passagedata pid="28" name="You really don&#39;t think you fit in this body" tags="" position="422,1399" size="100,100">You do it. You let it all out.
-
-Sam (if: $activity is 1)[sits with you on the couch](if: $activity is 2)[sits next to you in a matching salon chair](if: $activity is 3)[walks by your side through the open daisy meadow], listening to your release: not only of all the emotions you&#39;ve been holding in, but also the confusion about who you really are. You tell Sam you never felt comfortable in your skin. You never wanted to wear (if: $gender is 4)[all those frilly dresses](if: $gender is 6)[all the suits and ties]. It made you sick. It made you hide. 
-
-&quot;But you&#39;re free now. You&#39;re an adult, and you&#39;re free to ask these questions - to explore your identity&quot; Sam says. 
-[[You wipe away a tear]]</tw-passagedata><tw-passagedata pid="29" name="You feel even more lucky to be yourself" tags="" position="267.3333333333333,1716.3333333333333" size="100,100">Sam smiles at you. Sam has the most genuine smile in the world, and it seems to be even moreso right now. 
+Sam (if: $activity is 1)[sits with you on the couch](if: $activity is 2)[sits next to you in a matching salon chair](if: $activity is 3)[walks by your side through the open daisy meadow], listening to your release: not only of all the emotions you&#39;ve been holding in, but also the confusion about who you [[really are.]] </tw-passagedata><tw-passagedata pid="28" name="You feel even more lucky to be yourself" tags="YouandSam" position="438.6666666666667,1897.6666666666667" size="100,100">Sam smiles at you. Sam has the most genuine smile in the world, and it seems to be even moreso right now. 
 
 You (if: $activity is 1 or 2)[sit](if: $activity is 3)[walk] in silence for a bit. Nothing needs to be said. It feels like you and Sam are the only people in the world, sharing a special moment of gratitude and friendship.
 
 This couldn&#39;t get any better. 
 
-You wish for [[nothing more -&gt;end]]. </tw-passagedata><tw-passagedata pid="30" name="pats your back" tags="" position="464,1614" size="100,100">You and Sam talk for a while. You talk about everything, and you realize Sam may be in the same boat with you. 
+You wish for [[nothing more -&gt;end]]. </tw-passagedata><tw-passagedata pid="29" name="pats your back" tags="YouandSam" position="762.3333333333334,1750.6666666666667" size="100,100">You and Sam talk for a while. You talk about everything, and you realize Sam may be in the same boat with you. 
 
 What if I don&#39;t love what I do anymore?
 
@@ -386,7 +399,7 @@ How can I change things?
 
 And while the both of you ponder about life and where you each fit into this crazy world, you feel a sense of comfort. The journey of choices, you realize, is a development of yourself over time. There is no correct path, and it&#39;s [[okay-&gt;end]] to not know where you&#39;re headed. 
 
-At the end of the discussion, you simply (if: $activity is 1 or 2)[sit](if: $activity is 3)[walk] in silence for a bit. At least, even if you don&#39;t completely know yourselves yet, you have each other. </tw-passagedata><tw-passagedata pid="31" name="You wipe away a tear" tags="" position="691.3333333333334,1536.6666666666667" size="100,100">You and Sam talk for a while. You talk about everything, and you realize you aren&#39;t alone in your struggle.
+At the end of the discussion, you simply (if: $activity is 1 or 2)[sit](if: $activity is 3)[walk] in silence for a bit. At least, even if you don&#39;t completely know yourselves yet, you have each other. </tw-passagedata><tw-passagedata pid="30" name="You wipe away a tear" tags="YouandSam" position="922.6666666666667,1627.6666666666667" size="100,100">You and Sam talk for a while. You talk about everything, and you realize you aren&#39;t alone in your struggle.
 
 What if I don&#39;t love myself?
 
@@ -394,16 +407,40 @@ What if I&#39;m not fitting my mom&#39;s [[expectations?]]
 
 How can I find peace with myself?
 
-You don&#39;t understand. This feels like the culmination of so much confusion. //Years// of confusion. You knew your identity was a fragmented joint - something that didn&#39;t quite fit but was duct taped together just to make it work. But now that it&#39;s coming out, you feel even more vulnerable, more afraid. Sam wraps an arm around you. 
+You don&#39;t understand. This feels like the culmination of so much confusion. //Years// of confusion. You knew your identity was a fragmented joint - something that didn&#39;t quite fit but was duct taped together just to make it work. But now that it&#39;s coming out, you feel even more vulnerable, more afraid. [[Sam wraps an arm around you.]] 
 
+</tw-passagedata><tw-passagedata pid="31" name="end" tags="YouandSam" position="1023.6666666666669,1967.3333333333333" size="100,100">end
+
+%Put this in a nicer format
+
+ASK ABOUT CHANGING LINK COLORS
+</tw-passagedata><tw-passagedata pid="32" name="expectations?" tags="YouandSam" position="1107.3333333333333,1541.3333333333333" size="100,100">You remember how mom told you: you were meant to be (if: $gender is 4)[female](if: $gender is 6)[male]. But you don&#39;t feel like you can completely identify with that term.
+
+You feel like damaged goods. You feel like you failed the system. Technically, that means you failed (link-goto: &quot;your own mother&quot;, &quot;You wipe away a tear&quot;)</tw-passagedata><tw-passagedata pid="33" name="		Answer		" tags="YouandSam Sam" position="497,1053" size="100,100">&quot;Happy Birthday!!!&quot; Sam screams into the phone. 
+
+You immediately feel a pang of irritation from the loud sound, but a feeling of thankfulness overcomes you. 
+
+Of course Sam, your best friend, would be the first to call. Sam is the only person outside your immediate family that seems to care anyways.
+
+[[Hello]]</tw-passagedata><tw-passagedata pid="34" name="silent." tags="blueback2" position="810.6666666666667,423.3333333333333" size="100,100">She tells you she knows this doesn&#39;t fit in with your style. She says it&#39;s a good change, that you should at least //try// to look put together. 
+
+Even if it&#39;s only for the first day.
+
+You agree to [[try it on]]</tw-passagedata><tw-passagedata pid="35" name="really are." tags="YouandSam" position="733.6666666666667,1525.6666666666667" size="100,100">You tell Sam you never felt comfortable in your skin. You never wanted to wear (if: $gender is 4)[all those frilly dresses](if: $gender is 6)[all the suits and ties]. It made you sick. It made you hide. 
+
+&quot;But you&#39;re free now. You&#39;re an adult, and you can explore your identity&quot; Sam says. 
+[[You wipe away a tear]]</tw-passagedata><tw-passagedata pid="36" name="you&#39;re confused." tags="YouandSam" position="497.6666666666667,1729" size="100,100">You express worry in the fact that you may not actually want to continue progressing up the ranks in your law firm: that maybe all those years of school and hard work were for nothing. You don&#39;t want to believe you&#39;re a waste, but that&#39;s all you can feel. 
+
+&quot;But you have so much knowledge and experience now,&quot; Sam says. 
+Sam [[pats your back]]</tw-passagedata><tw-passagedata pid="37" name="happy." tags="YouandSam" position="179.33333333333334,1748.6666666666667" size="100,100">Your job is stable, your family is healthy, and only good things lie ahead. You&#39;re so excited for this next year: not only to progress in work and learn more each day, but to continue developing your own identity. 
+
+You&#39;re confident in who you are and who you want to be. You&#39;re comfortable with every crevice of yourself. 
+
+You feel lucky to have Sam.
+[[You feel even more lucky to be yourself]]</tw-passagedata><tw-passagedata pid="38" name="Sam wraps an arm around you." tags="YouandSam" position="1011,1777.6666666666667" size="100,100">
 After you&#39;ve let everything out, you and Sam (if: $activity is 1 or 2)[sit](if: $activity is 3)[walk] in silence for a bit. At least, even if you don&#39;t completely know yourselves yet, you have each other. You realize that your identity may take more time to develop, but that it will be completely worth it.
 
-[[You are completely worth it -&gt;end]]
-</tw-passagedata><tw-passagedata pid="32" name="end" tags="" position="732.3333333333334,1724.6666666666667" size="100,100">end
-
-%Put this in a nicer format</tw-passagedata><tw-passagedata pid="33" name="expectations?" tags="" position="899,1418.3333333333335" size="100,100">You remember how mom told you: you were meant to be (if: $gender is 4)[female](if: $gender is 6)[male]. But you don&#39;t feel like you can completely identify with that term.
-
-You feel like damaged goods. You feel like you failed the system. Technically, that means you failed (link-goto: &quot;your own mother&quot;, &quot;You wipe away a tear&quot;)</tw-passagedata></tw-storydata>
+[[You are completely worth it -&gt;end]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
